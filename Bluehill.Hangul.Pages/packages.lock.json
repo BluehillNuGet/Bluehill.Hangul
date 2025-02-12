@@ -77,15 +77,15 @@
       },
       "Microsoft.NET.ILLink.Tasks": {
         "type": "Direct",
-        "requested": "[9.0.1, )",
-        "resolved": "9.0.1",
-        "contentHash": "BKFAkdhUUJivAoKuSWcT23WH9E+AWQMJootzt9X+lnesOD2a2yNIe1ZQFtxB8H3ayskLBD5gYyIbj5GIfw7rZg=="
+        "requested": "[9.0.2, )",
+        "resolved": "9.0.2",
+        "contentHash": "+KFnCLVPicEq99ko0tq+ycTvNLXHw0tImmTZjPloB/DOFLPT56KLfk5aS7wbgXRPzYhXTTBYLGaABea5mke77w=="
       },
       "Microsoft.NET.Sdk.WebAssembly.Pack": {
         "type": "Direct",
-        "requested": "[9.0.1, )",
-        "resolved": "9.0.1",
-        "contentHash": "/+0fpalaBrtXNnoso2oIMi3W30+bDWe8lrXkRj6qKMKsTpDfJboxuVn+E9XDpuk2zTBqjd6ZDStD6F9KYMj7cQ=="
+        "requested": "[9.0.2, )",
+        "resolved": "9.0.2",
+        "contentHash": "svOs6YArbcpL06ZWj+b4hNVlJC5m37ydSgS+1XJWJzQu5fdT7ToEOaik1yiNo9AD357PBEiUJWTlrIcwdF8IeA=="
       },
       "Bluehill.Analyzers": {
         "type": "Transitive",
