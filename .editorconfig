@@ -179,6 +179,12 @@ dotnet_diagnostic.ide0304.severity = warning
 # Use collection expression for fluent
 dotnet_diagnostic.ide0305.severity = warning
 
+# Make anonymous function static
+dotnet_diagnostic.ide0320.severity = warning
+
+# Prefer 'System.Threading.Lock'
+dotnet_diagnostic.ide0330.severity = warning
+
 # Use conditional delegate call
 dotnet_diagnostic.ide1005.severity = warning
 
@@ -403,10 +409,6 @@ dotnet_diagnostic.ca1700.severity = warning
 
 # Identifiers should not contain underscores
 dotnet_diagnostic.ca1707.severity = warning
-
-# Identifiers should differ by more than case
-dotnet_diagnostic.ca1708.severity = warning
-dotnet_code_quality.ca1708.api_surface = all
 
 # Identifiers should have correct suffix
 dotnet_diagnostic.ca1710.severity = warning
@@ -997,6 +999,9 @@ dotnet_diagnostic.s112.severity = none
 
 # Unused private types or members should be removed
 dotnet_diagnostic.s1144.severity = none
+
+# Methods and properties that don't access instance data should be static
+dotnet_diagnostic.s2325.severity = none
 
 # Types should be defined in named namespaces
 dotnet_diagnostic.s3903.severity = none

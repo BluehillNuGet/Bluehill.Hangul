@@ -5,19 +5,19 @@
     <CentralPackageVersionOverrideEnabled>false</CentralPackageVersionOverrideEnabled>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Bluehill.Blazor" Version="0.9.0" />
-    <PackageVersion Include="Bluehill.Blazor.Culture.WebAssembly" Version="0.9.0" />
+    <PackageVersion Include="Bluehill.Blazor" Version="0.10.0" />
+    <PackageVersion Include="Bluehill.Blazor.Culture.WebAssembly" Version="0.10.0" />
     <PackageVersion Include="Bluehill.Blazor.GHPages" Version="1.0.2" />
     <PackageVersion Include="HighlightBlazor" Version="0.1.10" />
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.1" />
-    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.1" />
-    <PackageVersion Include="Microsoft.Extensions.Localization" Version="9.0.1" />
-    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
-    <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.1" />
-    <PackageVersion Include="bunit" Version="1.38.5" />
-    <PackageVersion Include="xunit.v3" Version="1.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Localization" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.3" />
+    <PackageVersion Include="bunit" Version="1.40.0" />
+    <PackageVersion Include="xunit.v3" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <GlobalPackageReference Include="Bluehill.Imports" Version="1.0.11" />
+    <GlobalPackageReference Include="Bluehill.Imports" Version="1.0.17" />
   </ItemGroup>
 </Project>

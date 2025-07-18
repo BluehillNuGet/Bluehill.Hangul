@@ -2,9 +2,12 @@
 *.cs text eol=crlf
 *.xaml text eol=crlf
 *.resx text eol=crlf
+*.razor text eol=crlf
+*.cshtml text eol=crlf
 *.csproj text eol=crlf
 *.csproj.user text eol=crlf
 *.vb text eol=crlf
+*.vbhtml text eol=crlf
 *.vbproj text eol=crlf
 *.vbproj.user text eol=crlf
 *.c text eol=crlf
@@ -32,3 +35,5 @@
 *.vbw text eol=crlf
 *.bat text eol=crlf
 *.cmd text eol=crlf
+*.manifest eol=crlf
+*.config eol=crlf
