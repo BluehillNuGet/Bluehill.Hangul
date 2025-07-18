@@ -1,4 +1,5 @@
-﻿namespace Bluehill.Hangul;
+﻿#pragma warning disable SA1514
+namespace Bluehill.Hangul;
 
 /// <summary>한글 모음(중성)을 나타냄</summary>
 public enum Jungseong : byte {

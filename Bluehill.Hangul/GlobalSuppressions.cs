@@ -6,3 +6,4 @@
 [assembly: SuppressMessage("Design", "CA1028:열거형 스토리지는 Int32여야 합니다", Justification = "<보류 중>", Scope = "type", Target = "~T:Bluehill.Hangul.Choseong")]
 [assembly: SuppressMessage("Design", "CA1028:열거형 스토리지는 Int32여야 합니다", Justification = "<보류 중>", Scope = "type", Target = "~T:Bluehill.Hangul.Jongseong")]
 [assembly: SuppressMessage("Design", "CA1028:열거형 스토리지는 Int32여야 합니다", Justification = "<보류 중>", Scope = "type", Target = "~T:Bluehill.Hangul.Jungseong")]
+[assembly: SuppressMessage("StyleCop.CSharp.LayoutRules", "SA1516:Elements should be separated by blank line", Justification = "<보류 중>", Scope = "member", Target = "~P:Bluehill.Hangul.HangulSyllable.Value")]

@@ -1,4 +1,5 @@
-﻿namespace Bluehill.Hangul.Tests;
+﻿#pragma warning disable SA1131
+namespace Bluehill.Hangul.Tests;
 
 public sealed class HangulSyllableTest {
     private static readonly HangulSyllable gaChar = new('가');

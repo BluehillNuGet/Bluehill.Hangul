@@ -3,5 +3,5 @@ namespace System.Runtime.CompilerServices;
 
 [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class | AttributeTargets.Assembly)]
 [ExcludeFromCodeCoverage]
-internal sealed class ExtensionAttribute : Attribute { }
+internal sealed class ExtensionAttribute : Attribute;
 #endif

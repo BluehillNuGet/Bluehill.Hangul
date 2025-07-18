@@ -5,8 +5,11 @@ namespace System.Runtime.CompilerServices;
 [ExcludeFromCodeCoverage]
 internal sealed class CompilerFeatureRequiredAttribute : Attribute {
     public string FeatureName { get; }
+
     public bool IsOptional { get; init; }
+
     public const string RefStructs = nameof(RefStructs);
+
     public const string RequiredMembers = nameof(RequiredMembers);
 
     public CompilerFeatureRequiredAttribute(string featureName) => FeatureName = featureName;

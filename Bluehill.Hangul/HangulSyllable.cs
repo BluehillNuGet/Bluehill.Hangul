@@ -1,4 +1,5 @@
-﻿namespace Bluehill.Hangul;
+﻿#pragma warning disable SA1609
+namespace Bluehill.Hangul;
 
 /// <summary>
 /// 한글 음절(가 ~ 힣)를 나타냄

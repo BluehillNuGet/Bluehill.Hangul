@@ -1,7 +1,7 @@
 ﻿#if !NET7_0_OR_GREATER
 namespace System.Diagnostics.CodeAnalysis;
 
-[AttributeUsage(AttributeTargets.Constructor, AllowMultiple = false, Inherited = false)]
+[AttributeUsage(AttributeTargets.Constructor)]
 [ExcludeFromCodeCoverage]
-internal sealed class SetsRequiredMembersAttribute : Attribute { }
+internal sealed class SetsRequiredMembersAttribute : Attribute;
 #endif
