@@ -21,7 +21,7 @@ jobs:
     env:
       NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
       OUTPUT_PATH: output
-      NUGETPROJ: Bluehill.Hangul/Bluehill.Hangul.csproj
+      NUGETPROJ: Directory.Build.props
     steps:
       - uses: actions/checkout@v4
         with:
@@ -41,7 +41,7 @@ jobs:
         with:
           file: ${{ env.NUGETPROJ }}
           version: bump-revision
-          tags: csproj.Version, csproj.FileVersion
+          tags: props.Version, props.FileVersion
       - name: Describe
         id: describe
         if: github.event_name == 'push'
@@ -53,7 +53,7 @@ jobs:
         with:
           file: ${{ env.NUGETPROJ }}
           version: ${{ steps.describe.outputs.InfoVersion }}
-          tags: csproj.Version
+          tags: props.Version
       - name: Restore dependencies
         run: dotnet restore
       - name: Build (Debug)
