@@ -960,6 +960,9 @@ dotnet_diagnostic.rcs1110.severity = none
 # Remove redundant overriding member
 dotnet_diagnostic.rcs1132.severity = none
 
+# Use StringComparison when comparing strings
+dotnet_diagnostic.rcs1155.severity = none
+
 # Use string.Length instead of comparison with empty string
 dotnet_diagnostic.rcs1156.severity = none
 
@@ -1555,7 +1558,7 @@ csharp_indent_block_contents = true
 csharp_indent_braces = false
 csharp_indent_case_contents = true
 csharp_indent_case_contents_when_block = false
-csharp_indent_labels = flush_left
+csharp_indent_labels = one_less_than_current
 csharp_indent_switch_labels = true
 
 # 공간 기본 설정
@@ -1928,7 +1931,7 @@ resharper_outdent_binary_pattern_ops = false
 resharper_outdent_commas = false
 resharper_outdent_dots = false
 resharper_outdent_namespace_member = false
-resharper_outdent_statement_labels = false
+resharper_outdent_statement_labels = true
 resharper_outdent_ternary_ops = false
 resharper_parentheses_group_non_obvious_operations = none, arithmetic, conditional
 resharper_parentheses_non_obvious_operations = none, shift, bitwise_and, bitwise_exclusive_or, bitwise_inclusive_or, bitwise
@@ -2226,7 +2229,7 @@ resharper_wrap_for_stmt_header_style = wrap_if_long
 resharper_wrap_linq_expressions = chop_if_long
 resharper_wrap_list_pattern = wrap_if_long
 resharper_wrap_multiple_type_parameter_constraints_style = chop_if_long
-resharper_wrap_object_and_collection_initializer_style = chop_if_long
+resharper_wrap_object_and_collection_initializer_style = chop_always
 resharper_wrap_primary_constructor_parameters_style = chop_if_long
 resharper_wrap_property_pattern = chop_if_long
 resharper_wrap_switch_expression = chop_always

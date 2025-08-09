@@ -35,5 +35,7 @@
 *.vbw text eol=crlf
 *.bat text eol=crlf
 *.cmd text eol=crlf
-*.manifest eol=crlf
-*.config eol=crlf
+*.manifest text eol=crlf
+*.config text eol=crlf
+*.vsixmanifest text eol=crlf
+Directory.Packages.props text eol=lf

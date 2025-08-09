@@ -15,18 +15,6 @@ updates:
   #       patterns:
   #         - "*"
 
-  - package-ecosystem: dotnet-sdk
-    directory: /
-    schedule:
-      interval: weekly
-      day: wednesday
-      time: "09:00"
-      timezone: Asia/Seoul
-    assignees:
-      - na1307
-    pull-request-branch-name:
-      separator: _
-
   - package-ecosystem: github-actions
     directory: /
     schedule:
