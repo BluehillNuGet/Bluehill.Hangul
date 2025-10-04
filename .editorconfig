@@ -566,10 +566,6 @@ dotnet_diagnostic.ca1850.severity = warning
 # Possible multiple enumerations of IEnumerable collection
 dotnet_diagnostic.ca1851.severity = warning
 
-# Seal internal types
-dotnet_diagnostic.ca1852.severity = warning
-dotnet_code_quality.ca1852.ignore_internalsvisibleto = true
-
 # Unnecessary call to 'Dictionary.ContainsKey(key)'
 dotnet_diagnostic.ca1853.severity = warning
 
@@ -814,8 +810,14 @@ dotnet_diagnostic.rcs1042.severity = error
 # Declare each attribute separately
 dotnet_diagnostic.rcs1052.severity = error
 
+# Constant values should be placed on right side of comparisons
+dotnet_diagnostic.rcs1058.severity = error
+
 # Split variable declaration
 dotnet_diagnostic.rcs1081.severity = error
+
+# Constant values should be placed on right side of comparisons
+dotnet_diagnostic.rcs1098.severity = error
 
 ## Warnings ##
 
@@ -840,9 +842,6 @@ dotnet_diagnostic.rcs1071.severity = warning
 
 # Remove redundant constructor
 dotnet_diagnostic.rcs1074.severity = warning
-
-# Constant values should be placed on right side of comparisons
-dotnet_diagnostic.rcs1098.severity = warning
 
 # Default label should be the last label in a switch section
 dotnet_diagnostic.rcs1099.severity = warning
@@ -1080,9 +1079,6 @@ dotnet_diagnostic.sa1123.severity = error
 # Use shorthand for nullable types
 dotnet_diagnostic.sa1125.severity = error
 
-# Use readable conditions
-dotnet_diagnostic.sa1131.severity = error
-
 # Use tuple syntax
 dotnet_diagnostic.sa1141.severity = error
 
@@ -1306,6 +1302,9 @@ dotnet_diagnostic.sa1127.severity = none
 
 # Put constructor initializers on their own line
 dotnet_diagnostic.sa1128.severity = none
+
+# Use readable conditions
+dotnet_diagnostic.sa1131.severity = none
 
 # Do not combine fields
 dotnet_diagnostic.sa1132.severity = none
@@ -1729,12 +1728,12 @@ resharper_constructor_or_destructor_body = expression_body
 resharper_continuous_indent_multiplier = 1
 resharper_continuous_line_indent = single
 resharper_cpp_align_multiline_binary_expressions_chain = false
-resharper_cpp_anonymous_method_declaration_braces = next_line
+resharper_cpp_anonymous_method_declaration_braces = end_of_line
 resharper_cpp_case_block_braces = next_line_shifted_2
 resharper_cpp_empty_block_style = together_same_line
 resharper_cpp_indent_switch_labels = false
 resharper_cpp_insert_final_newline = true
-resharper_cpp_invocable_declaration_braces = next_line
+resharper_cpp_invocable_declaration_braces = end_of_line
 resharper_cpp_keep_blank_lines_in_code = 2
 resharper_cpp_keep_blank_lines_in_declarations = 2
 resharper_cpp_keep_existing_arrangement = true
@@ -1744,11 +1743,11 @@ resharper_cpp_max_line_length = 150
 resharper_cpp_new_line_before_catch = true
 resharper_cpp_new_line_before_else = true
 resharper_cpp_new_line_before_while = true
-resharper_cpp_other_braces = next_line
+resharper_cpp_other_braces = end_of_line
 resharper_cpp_place_simple_blocks_on_single_line = false
 resharper_cpp_space_after_unary_operator = false
 resharper_cpp_space_around_binary_operator = true
-resharper_cpp_type_declaration_braces = next_line
+resharper_cpp_type_declaration_braces = end_of_line
 resharper_cpp_wrap_after_declaration_lpar = false
 resharper_cpp_wrap_lines = true
 resharper_cpp_wrap_parameters_style = wrap_if_long
@@ -1775,7 +1774,7 @@ resharper_csharp_wrap_before_binary_opsign = true
 resharper_csharp_wrap_lines = true
 resharper_csharp_wrap_multiple_declaration_style = wrap_if_long
 resharper_csharp_wrap_parameters_style = chop_if_long
-resharper_cxxcli_property_declaration_braces = next_line
+resharper_cxxcli_property_declaration_braces = end_of_line
 resharper_declaration_body_on_the_same_line = if_owner_is_single_line
 resharper_default_exception_variable_name = e
 resharper_default_internal_modifier = explicit
@@ -1797,7 +1796,7 @@ resharper_enable_wrapping = false
 resharper_enforce_line_ending_style = false
 resharper_event_handler_pattern_long = $object$On$event$
 resharper_event_handler_pattern_short = On$event$
-resharper_export_declaration_braces = next_line
+resharper_export_declaration_braces = end_of_line
 resharper_expression_braces = inside
 resharper_expression_pars = inside
 resharper_extra_spaces = remove_all
@@ -1913,7 +1912,7 @@ resharper_member_initializer_list_style = do_not_change
 resharper_method_or_operator_body = expression_body
 resharper_modifiers_order = public private protected internal static extern new virtual abstract sealed override readonly unsafe volatile async file required
 resharper_namespace_body = file_scoped
-resharper_namespace_declaration_braces = next_line
+resharper_namespace_declaration_braces = end_of_line
 resharper_namespace_indentation = all
 resharper_nested_ternary_style = simple_wrap
 resharper_never_outdent_pipe_operators = true
@@ -1983,7 +1982,7 @@ resharper_remove_only_unused_aliases = true
 resharper_remove_spaces_on_blank_lines = true
 resharper_remove_this_qualifier = true
 resharper_remove_unused_only_aliases = false
-resharper_requires_expression_braces = next_line
+resharper_requires_expression_braces = end_of_line
 resharper_resx_attribute_indent = single_indent
 resharper_resx_insert_final_newline = false
 resharper_resx_keep_user_linebreaks = true
@@ -2029,11 +2028,11 @@ resharper_space_after_last_attribute = false
 resharper_space_after_last_pi_attribute = false
 resharper_space_after_operator_keyword = true
 resharper_space_after_operator_not = false
-resharper_space_after_ptr_in_data_member = true
+resharper_space_after_ptr_in_data_member = false
 resharper_space_after_ptr_in_data_members = false
 resharper_space_after_ptr_in_method = true
 resharper_space_after_ptr_in_nested_declarator = false
-resharper_space_after_ref_in_data_member = true
+resharper_space_after_ref_in_data_member = false
 resharper_space_after_ref_in_data_members = false
 resharper_space_after_ref_in_method = true
 resharper_space_after_semicolon_in_for_statement = true
@@ -2078,11 +2077,11 @@ resharper_space_before_open_square_brackets = false
 resharper_space_before_pointer_asterik_declaration = false
 resharper_space_before_postfix_operator = false
 resharper_space_before_ptr_in_abstract_decl = false
-resharper_space_before_ptr_in_data_member = false
+resharper_space_before_ptr_in_data_member = true
 resharper_space_before_ptr_in_data_members = true
 resharper_space_before_ptr_in_method = false
 resharper_space_before_ref_in_abstract_decl = false
-resharper_space_before_ref_in_data_member = false
+resharper_space_before_ref_in_data_member = true
 resharper_space_before_ref_in_data_members = true
 resharper_space_before_ref_in_method = false
 resharper_space_before_semicolon = false
@@ -5185,3 +5184,7 @@ cpp_sort_includes_priority_case_sensitive = false
 cpp_sort_includes_priority_style = quoted
 cpp_includes_style = default
 cpp_includes_use_forward_slash = false
+
+# ReSharper properties
+resharper_cpp_allow_comment_after_lbrace = true
+resharper_new_line_before_while = false

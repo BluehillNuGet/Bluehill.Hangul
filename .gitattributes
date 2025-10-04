@@ -28,6 +28,7 @@
 *.targets text eol=crlf
 *.pubxml text eol=crlf
 *.sln text eol=crlf
+*.slnx text eol=crlf
 *.bas text eol=crlf
 *.cls text eol=crlf
 *.frm text eol=crlf
