@@ -42,7 +42,7 @@ jobs:
           key: ${{ runner.os }}-pages-nuget-${{ hashFiles('global.json', 'Directory.Packages.props') }} #hash of project files
           restore-keys: ${{ runner.os }}-pages-nuget-
       - name: Prepare Blazor WASM for GitHub Pages
-        uses: na1307/blazor-github-pages@main
+        uses: na1307/blazor-github-pages@v4
         id: prepare
         with:
           project-path: Bluehill.Hangul.Pages/Bluehill.Hangul.Pages.csproj

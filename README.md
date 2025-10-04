@@ -8,4 +8,4 @@
 1. 자모 처리
 1. 한글 관련 상수
 
-체인지로그 등의 자세한 대용은 [GitHub Pages](https://bluehillnuget.github.io/Bluehill.Hangul)를 참고해 주시기 바랍니다.
+체인지로그 등의 자세한 대용은 [GitHub Pages](https://hangul.bluehill.dev)를 참고해 주시기 바랍니다.
